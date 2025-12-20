@@ -1,99 +1,134 @@
 {% extends 'base.html' %}
 {% block title %}Project - My Portfolio{% endblock %}
+
 {% block content %}
 <main class="main">
 
-  <section id="hero" class="hero section">
-    <section id="projects" class="py-5 bg-light">
-      <div class="container text-center">
-        <p class="text-uppercase fw-bold text-primary mb-2">My Projects</p>
-        <h2 class="fw-bold mb-4">My Projects</h2>
-        <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">
-          Whether you have a mobile app idea that needs to come to life or a website that requires a facelift, I'm here to turn your digital dreams into reality.
-        </p>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5" style="background: linear-gradient(180deg, #ffffff, #f3f6ff);">
+    <div class="container text-center">
 
-        <div class="row g-4">
-          <!-- Project 1 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 text-center p-4 hover-shadow">
-              <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
-                style="width:70px;height:70px;">
-                <i class="bi bi-robot fs-3"></i>
-              </div>
-              <h5 class="fw-bold mb-2">🧠 Recipe Generator Chatbot</h5>
-              <p class="text-muted mb-3">
-                AI/ML-powered chatbot that suggests personalized recipes based on user-input ingredients using natural language understanding.
-              </p>
-              <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank"
-                class="btn btn-outline-primary btn-sm">
-                <i class="bi bi-github me-1"></i> View on GitHub
-              </a>
-            </div>
-          </div>
+      <!-- Heading -->
+      <p class="text-uppercase fw-bold text-primary mb-2">My Projects</p>
+      <h2 class="fw-bold mb-4">Showcasing My Best Work</h2>
+      <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">
+        Explore the work I’ve done combining AI, web development, machine learning, and data analytics —  
+        crafted with passion for clean design and real-world problem solving.
+      </p>
 
-          <!-- Project 2 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 text-center p-4 hover-shadow">
-              <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
-                style="width:70px;height:70px;">
-                <i class="bi bi-music-note-beamed fs-3"></i>
-              </div>
-              <h5 class="fw-bold mb-2">🎵 Music API Integration App</h5>
-              <p class="text-muted mb-3">
-                Fetches, filters, and plays music using public APIs like Spotify — integrating seamless user experience and dynamic playlists.
-              </p>
-              <a href="#" class="btn btn-outline-secondary btn-sm disabled">
-                <i class="bi bi-github me-1"></i> Coming Soon
-              </a>
-            </div>
-          </div>
+      <!-- Project Cards Row -->
+      <div class="row g-4 justify-content-center">
 
-          <!-- Project 3 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 text-center p-4 hover-shadow">
-              <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
-                style="width:70px;height:70px;">
-                <i class="bi bi-diagram-3 fs-3"></i>
-              </div>
-              <h5 class="fw-bold mb-2">⚙️ Classification Web App</h5>
-              <p class="text-muted mb-3">
-                Flask-based ML application that classifies user input or uploaded data — bridging AI logic with an intuitive web interface.
-              </p>
-              <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank"
-                class="btn btn-outline-primary btn-sm">
-                <i class="bi bi-github me-1"></i> View on GitHub
-              </a>
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="bi bi-robot fs-3"></i>
             </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow-sm border-0 text-center p-4 hover-shadow">
-              <div class="bg-dark text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
-                style="width:70px;height:70px;">
-                <i class="bi bi-chat-dots fs-3"></i>
-              </div>
-              <h5 class="fw-bold mb-2">🤖 AI Chatbot Assistant</h5>
-              <p class="text-muted mb-3">
-                Smart conversational chatbot with GPT integration, sentiment analysis, and speech input — built using Angular and Flask backend.
-              </p>
-              <a href="#" class="btn btn-outline-secondary btn-sm disabled">
-                <i class="bi bi-github me-1"></i> Coming Soon
-              </a>
-            </div>
+            <h5 class="fw-bold mb-2">🧠 Recipe Generator Chatbot</h5>
+            <p class="text-muted mb-3">
+              AI chatbot that suggests recipes based on ingredients using NLP.
+            </p>
+            <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank"
+              class="btn btn-primary-soft btn-sm">
+              <i class="bi bi-github me-1"></i> View on GitHub
+            </a>
           </div>
         </div>
+
+        <!-- Project 1.1 RuchiBot -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="bi bi-basket2 fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">🍛 RuchiBot – AI Recipe Recommendation</h5>
+            <p class="text-muted mb-3">
+              Recommends dishes using TF-IDF, cosine similarity & multilingual input.
+            </p>
+            <a href="https://github.com/kolianita22/Ruchibot_Recommender_System"
+              class="btn btn-primary-soft btn-sm">
+              <i class="bi bi-github me-1"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="bi bi-diagram-3 fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">⚙️ Classification Web App</h5>
+            <p class="text-muted mb-3">
+              ML Flask application that predicts classes from user inputs.
+            </p>
+            <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank"
+              class="btn btn-primary-soft btn-sm">
+              <i class="bi bi-github me-1"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 SQL Layoff -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+            <div class="icon-circle mb-4">
+              <i class="bi bi-bar-chart-line fs-3"></i>
+            </div>
+            <h5 class="fw-bold mb-2">📊 Layoffs Data Cleaning & EDA</h5>
+            <p class="text-muted mb-3">
+              MySQL project using staging tables, ROW_NUMBER(), null cleanup & global EDA.
+            </p>
+            <a href="https://github.com/kolianita22/mysql_layoffs_project" target="_blank"
+              class="btn btn-primary-soft btn-sm">
+              <i class="bi bi-github me-1"></i> View Project
+            </a>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
   </section>
+
 </main>
 
 <style>
+  .project-card {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+  }
 
-.hover-shadow:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
-}
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 40, 0.12) !important;
+  }
+
+  .icon-circle {
+    width: 75px;
+    height: 75px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+  }
+
+  .btn-primary-soft {
+    background: #eaf2ff;
+    color: #0d6efd;
+    border-radius: 8px;
+    border: 1px solid #d3e3ff;
+    padding: 6px 12px;
+    transition: 0.2s ease;
+  }
+
+  .btn-primary-soft:hover {
+    background: #0d6efd;
+    color: #ffffff;
+  }
 </style>
 {% endblock %}

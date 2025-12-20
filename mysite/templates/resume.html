@@ -1,89 +1,148 @@
 {% extends 'base.html' %}
-{% block title %}Project - My Portfolio{% endblock %}
+{% block title %}Resume - My Portfolio{% endblock %}
 {% block content %}
- <section id="resume" class="py-5">
+
+<section id="resume" class="py-5">
   <div class="container" data-aos="fade-up">
+
     <!-- Section Title -->
     <div class="text-center mb-5">
-      <h2 class="fw-bold text-uppercase mb-3">Resume</h2>
+      <h2 class="fw-bold text-uppercase" style="letter-spacing:1px;">My Resume</h2>
       <p class="text-muted fs-5">
-        Passionate MCA student skilled in full-stack development, AI chatbots, and data-driven web applications.
+        MCA student specializing in full-stack development, AI chatbots, and intelligent web applications.
       </p>
     </div>
 
     <div class="row gy-5">
-      <!-- Left Column -->
+
+      <!-- ================= LEFT COLUMN ================= -->
       <div class="col-lg-6" data-aos="fade-right">
+
+        <!-- Summary -->
         <h3 class="fw-semibold mb-3 text-primary">Summary</h3>
-        <h5 class="fw-bold">Anita Pralhad Koli</h5>
+        <h5 class="fw-bold mb-1">Anita Pralhad Koli</h5>
         <p class="text-muted">
-          MCA student at Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon.
-          Enthusiastic developer with experience in AI-based projects, web app development, and backend technologies.
+          Motivated MCA student with experience in full-stack development, AI-powered chatbots,
+          and machine-learning based applications. Strong problem-solving ability with hands-on
+          experience in web frameworks like Django, Flask, Angular, and backend/API development.
         </p>
+
         <ul class="list-unstyled mb-4">
           <li><i class="bi bi-geo-alt text-primary me-2"></i> Jalgaon, Maharashtra, India</li>
           <li><i class="bi bi-telephone text-primary me-2"></i> +91 8208784700</li>
           <li><i class="bi bi-envelope text-primary me-2"></i> kolianita784@gmail.com</li>
           <li>
             <i class="bi bi-linkedin text-primary me-2"></i>
-            <a href="https://www.linkedin.com/in/anita-koli-a0a9b722a" target="_blank" class="text-decoration-none text-dark">
+            <a href="https://www.linkedin.com/in/anita-koli-a0a9b722a" target="_blank"
+               class="text-decoration-none text-dark">
               linkedin.com/in/anita-koli-a0a9b722a
             </a>
           </li>
         </ul>
 
+        <!-- Education -->
         <h3 class="fw-semibold mb-3 text-primary">Education</h3>
-        <div class="mb-3">
+
+        <div class="mb-4">
           <h6 class="fw-bold mb-0">Master of Computer Applications (MCA)</h6>
-          <small class="text-muted">K.B.C. North Maharashtra University, Jalgaon | 2024 – Present</small>
+          <small class="text-muted">
+            KBC North Maharashtra University, Jalgaon | 2024 – Present
+          </small>
         </div>
-        <div>
-          <h6 class="fw-bold mb-0">Bachelor of Science in Computer Science</h6>
-          <small class="text-muted">K.B.C. North Maharashtra University, Jalgaon | 2021 – 2024 | 85.59%</small>
+
+        <div class="mb-4">
+          <h6 class="fw-bold mb-0">B.Sc. in Computer Science</h6>
+          <small class="text-muted">
+            KBC North Maharashtra University, Jalgaon | 2021 – 2024 | <strong>85.59%</strong>
+          </small>
         </div>
+
       </div>
 
-      <!-- Right Column -->
+      <!-- ================= RIGHT COLUMN ================= -->
       <div class="col-lg-6" data-aos="fade-left">
+
+        <!-- Projects -->
         <h3 class="fw-semibold mb-3 text-primary">Projects</h3>
 
+        <!-- Project 1 -->
         <div class="mb-4">
           <h6 class="fw-bold">🧠 Recipe Generator Chatbot</h6>
           <p class="text-muted mb-1">Flask | Gemini API | Bootstrap</p>
-          <p>AI chatbot that suggests recipes based on ingredients using Gemini AI API and Flask backend.</p>
-          <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank" class="btn btn-outline-primary btn-sm">
+          <p>
+            AI-powered chatbot that suggests recipes based on user-provided ingredients.
+            Integrated Gemini API for intelligent text generation and built an interactive
+            UI with Flask backend.
+          </p>
+          <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank"
+             class="btn btn-outline-primary btn-sm">
             <i class="bi bi-github me-1"></i> View Project
           </a>
         </div>
 
+        <!-- Project 2 -->
         <div class="mb-4">
-          <h6 class="fw-bold">🎵 Music API Integration App</h6>
-          <p class="text-muted mb-1">Angular | Spotify API</p>
-          <p>Music web app that fetches and plays songs dynamically using a public API.</p>
-          <a href="#" class="btn btn-outline-primary btn-sm disabled">
-            <i class="bi bi-github me-1"></i> Coming Soon
+          <h6 class="fw-bold">🍛 RuchiBot – AI Recipe Recommendation System</h6>
+          <p class="text-muted mb-1">Python | Flask | NLP | Machine Learning</p>
+          <p>
+            Intelligent food recommendation engine using NLP processing, TF-IDF vectorization,
+            cosine similarity, and ingredient matching (supports Marathi inputs). Includes 
+            chat-based UI and API integration.
+          </p>
+          <a href="https://github.com/kolianita22/Ruchibot_Recommender_System"" class="btn btn-outline-primary btn-sm disabled">
+            <i class="bi bi-github me-1"></i>view Project
           </a>
         </div>
 
+        <!-- Project 3 -->
         <div class="mb-4">
-          <h6 class="fw-bold">⚙️ Web App with Classification Model</h6>
-          <p class="text-muted mb-1">Flask | ML Model</p>
-          <p>Machine learning-based web app for classifying user input or uploaded data.</p>
-          <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank" class="btn btn-outline-primary btn-sm">
+          <h6 class="fw-bold">⚙️ ML Classification Web App</h6>
+          <p class="text-muted mb-1">Flask | Machine Learning</p>
+          <p>
+            A web interface that allows users to upload or input data for classification.
+            Trained ML model integrated with Flask to deliver real-time predictions.
+          </p>
+          <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank"
+             class="btn btn-outline-primary btn-sm">
             <i class="bi bi-github me-1"></i> View Project
           </a>
         </div>
 
+        <!-- Project 4 -->
+        <div class="mb-4">
+          <h6 class="fw-bold">📊 Layoffs Data Cleaning & EDA (SQL Project)</h6>
+          <p class="text-muted mb-1">MySQL | Data Cleaning | Window Functions | EDA</p>
+          <p>
+            Performed end-to-end SQL data cleaning with staging layers, deduplication using
+            ROW_NUMBER(), handling NULLs, value standardization, and complete exploratory
+            analysis on global layoffs trends.
+          </p>
+          <a href="https://github.com/kolianita22/layoffs-sql-analysis" target="_blank"
+             class="btn btn-outline-primary btn-sm">
+            <i class="bi bi-github me-1"></i> View Project
+          </a>
+        </div>
+
+        <!-- Skills -->
         <h3 class="fw-semibold mb-3 text-primary">Technical Skills</h3>
+
         <ul class="list-unstyled">
+
           <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, Angular</li>
-          <li><strong>Backend:</strong> Python (Flask), Node.js, Express.js</li>
-          <li><strong>Database:</strong> MySQL, MongoDB</li>
-          <li><strong>Languages:</strong> Java, Python (Data Structures)</li>
-          <li><strong>Tools:</strong> Git, VS Code, Docker</li>
+
+          <li><strong>Backend:</strong> Python (Flask), Node.js, Django (learning)</li>
+
+          <li><strong>Database:</strong> MySQL</li>
+
+          <li><strong>Programming:</strong> Python, Java, Data Structures & Algorithms</li>
+
+          <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
         </ul>
+
       </div>
+
     </div>
   </div>
 </section>
+
 {% endblock %}
