@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from pyexpat.errors import messages
+from django.shortcuts import redirect, render
+from myproject.mysite.forms import ContactForm
 from mysite.models import Contact
 
 
@@ -16,12 +18,13 @@ def project(request):
     return render(request, 'project.html')
 
 def contact(request):
-    if request.method == "POST":
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
-        email = request.POST.get('email')
-        message = request.POST.get('message')
-        contact_entry = Contact(first_name=first_name, last_name=last_name, email=email, message=message)
-        contact_entry.save()
-        return render(request, 'contact.html', {'success': True})
-    return render(request, 'contact.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()  # Save message to database only
+            messages.success(request, 'Your message has been sent successfully!')
+            return redirect('contact')
+    else:
+        form = ContactForm()
+
+    return render(request, 'contact.html', {'form': form})
