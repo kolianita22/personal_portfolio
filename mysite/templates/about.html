@@ -1,17 +1,19 @@
-{% extends 'base.html' %} {% block title %}About - My Portfolio{% endblock %} {%
-block content %}
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About - My Portfolio{% endblock %}
+ {% block content %}
 
 <!-- ======================= ABOUT SECTION ======================= -->
 <section class="about-section py-5" style="background: #faf9ff">
   <div class="container">
     <div class="row align-items-center">
       <!-- Left Image -->
-      <div class="col-md-5 text-center mb-4 mb-md-0">
+      <div class="col-md-5 mb-4 mb-md-0 text-center">
         <img
-          src="https://i.ibb.co/2F6Ww7G/men-avatar.png"
-          alt="About Image"
-          class="img-fluid rounded-4 shadow-sm"
-          style="max-width: 90%"
+          src="{% static 'images/anita_avatar.png' %}"
+          alt="About Me"
+          class="img-fluid rounded-circle shadow-lg about-img"
+          style="max-width: 300px"
         />
       </div>
 
@@ -125,5 +127,4 @@ block content %}
     justify-content: center;
   }
 </style>
-
 {% endblock %}
