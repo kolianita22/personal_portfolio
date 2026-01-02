@@ -1,6 +1,7 @@
 from pyexpat.errors import messages
 from django.shortcuts import redirect, render
-from mysite.forms import ContactForm   # ✅ absolute import
+from mysite.forms import ContactForm  
+from django.contrib import messages
 
 
 from mysite.models import Contact
