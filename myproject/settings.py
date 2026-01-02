@@ -29,7 +29,10 @@ SECRET_KEY = 'django-insecure-_cwo$4lzzbw19_d(tnp3@)y5vjgs@x%a+tp=6&_mbbxe3!6w&_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.railway.app','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['personal-portfolio-l1le.onrender.com',
+    '.onrender.com',
+    'localhost',
+    '127.0.0.1',]
 
 # Application definition
 
