@@ -1,27 +1,58 @@
-{% extends 'base.html' %}
-{% block title %}Project - My Portfolio{% endblock %}
-
+{% extends 'base.html' %} {% block title %}Project - My Portfolio{% endblock %}
 {% block content %}
 <main class="main">
-
   <!-- Projects Section -->
-  <section id="projects" class="py-5" style="background: linear-gradient(180deg, #ffffff, #f3f6ff);">
+  <section
+    id="projects"
+    class="py-5"
+    style="background: linear-gradient(180deg, #ffffff, #f3f6ff)"
+  >
     <div class="container text-center">
-
       <!-- Heading -->
       <p class="text-uppercase fw-bold text-primary mb-2">My Projects</p>
       <h2 class="fw-bold mb-4">Showcasing My Best Work</h2>
-      <p class="text-muted mb-5 mx-auto" style="max-width: 700px;">
-        Explore the work I’ve done combining AI, web development, machine learning, and data analytics —  
-        crafted with passion for clean design and real-world problem solving.
+      <p class="text-muted mb-5 mx-auto" style="max-width: 700px">
+        Explore the work I’ve done combining AI, web development, machine
+        learning, and data analytics — crafted with passion for clean design and
+        real-world problem solving.
       </p>
 
       <!-- Project Cards Row -->
       <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="card project-card h-100 shadow-sm border-0 text-center p-4"
+          >
+            <div class="icon-circle mb-4">
+              <i class="bi bi-robot fs-3"></i>
+            </div>
+
+            <h5 class="fw-bold mb-2">
+              VoiceFinance – AI Personal Finance Tracker
+            </h5>
+
+            <p class="text-muted mb-3">
+              A smart web application that tracks daily expenses using voice
+              commands and manual input. Built with React, NLP parsing, and data
+              visualization to analyze monthly spending patterns and provide
+              AI-powered financial insights.
+            </p>
+
+            <a
+              href="https://github.com/kolianita22/voice_finance"
+              target="_blank"
+              class="btn btn-primary-soft btn-sm"
+            >
+              <i class="bi bi-github me-1"></i> View on GitHub
+            </a>
+          </div>
+        </div>
 
         <!-- Project 1 -->
         <div class="col-md-6 col-lg-3">
-          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+          <div
+            class="card project-card h-100 shadow-sm border-0 text-center p-4"
+          >
             <div class="icon-circle mb-4">
               <i class="bi bi-robot fs-3"></i>
             </div>
@@ -29,8 +60,11 @@
             <p class="text-muted mb-3">
               AI chatbot that suggests recipes based on ingredients using NLP.
             </p>
-            <a href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi" target="_blank"
-              class="btn btn-primary-soft btn-sm">
+            <a
+              href="https://github.com/kolianita22/Ai-Weekend-project-recipeAi"
+              target="_blank"
+              class="btn btn-primary-soft btn-sm"
+            >
               <i class="bi bi-github me-1"></i> View on GitHub
             </a>
           </div>
@@ -38,16 +72,21 @@
 
         <!-- Project 1.1 RuchiBot -->
         <div class="col-md-6 col-lg-3">
-          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+          <div
+            class="card project-card h-100 shadow-sm border-0 text-center p-4"
+          >
             <div class="icon-circle mb-4">
               <i class="bi bi-basket2 fs-3"></i>
             </div>
             <h5 class="fw-bold mb-2">🍛 RuchiBot – AI Recipe Recommendation</h5>
             <p class="text-muted mb-3">
-              Recommends dishes using TF-IDF, cosine similarity & multilingual input.
+              Recommends dishes using TF-IDF, cosine similarity & multilingual
+              input.
             </p>
-            <a href="https://github.com/kolianita22/RuchibotRecommenderSystem"
-              class="btn btn-primary-soft btn-sm">
+            <a
+              href="https://github.com/kolianita22/RuchibotRecommenderSystem"
+              class="btn btn-primary-soft btn-sm"
+            >
               <i class="bi bi-github me-1"></i> View on GitHub
             </a>
           </div>
@@ -55,7 +94,9 @@
 
         <!-- Project 2 -->
         <div class="col-md-6 col-lg-3">
-          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+          <div
+            class="card project-card h-100 shadow-sm border-0 text-center p-4"
+          >
             <div class="icon-circle mb-4">
               <i class="bi bi-diagram-3 fs-3"></i>
             </div>
@@ -63,8 +104,11 @@
             <p class="text-muted mb-3">
               ML Flask application that predicts classes from user inputs.
             </p>
-            <a href="https://github.com/kolianita22/flask_titanic_app" target="_blank"
-              class="btn btn-primary-soft btn-sm">
+            <a
+              href="https://github.com/kolianita22/flask_titanic_app"
+              target="_blank"
+              class="btn btn-primary-soft btn-sm"
+            >
               <i class="bi bi-github me-1"></i> View on GitHub
             </a>
           </div>
@@ -72,25 +116,29 @@
 
         <!-- Project 3 SQL Layoff -->
         <div class="col-md-6 col-lg-3">
-          <div class="card project-card h-100 shadow-sm border-0 text-center p-4">
+          <div
+            class="card project-card h-100 shadow-sm border-0 text-center p-4"
+          >
             <div class="icon-circle mb-4">
               <i class="bi bi-bar-chart-line fs-3"></i>
             </div>
             <h5 class="fw-bold mb-2">📊 Layoffs Data Cleaning & EDA</h5>
             <p class="text-muted mb-3">
-              MySQL project using staging tables, ROW_NUMBER(), null cleanup & global EDA.
+              MySQL project using staging tables, ROW_NUMBER(), null cleanup &
+              global EDA.
             </p>
-            <a href="https://github.com/kolianita22/mysql_layoffs_project" target="_blank"
-              class="btn btn-primary-soft btn-sm">
+            <a
+              href="https://github.com/kolianita22/mysql_layoffs_project"
+              target="_blank"
+              class="btn btn-primary-soft btn-sm"
+            >
               <i class="bi bi-github me-1"></i> View Project
             </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
 </main>
 
 <style>
